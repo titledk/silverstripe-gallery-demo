@@ -4,9 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6d73f159f5c29eba4f330abe34b3b554",
-    "content-hash": "fbbba3ba186a8600fa4d87160622b4ff",
+    "hash": "8cb0d09dd30659d63bac67ddd9e110a0",
+    "content-hash": "b2665ffae6544a56622277950d84a8b2",
     "packages": [
+        {
+            "name": "bummzack/sortablefile",
+            "version": "1.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bummzack/sortablefile.git",
+                "reference": "3b601d30ec0a2e3654ce7fb37ffa557159952b2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bummzack/sortablefile/zipball/3b601d30ec0a2e3654ce7fb37ffa557159952b2f",
+                "reference": "3b601d30ec0a2e3654ce7fb37ffa557159952b2f",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "bummzack"
+                }
+            ],
+            "description": "An extension for SilverStripe 3.1 that allows sorting of multiple attached images (extends UploadField).",
+            "keywords": [
+                "cms",
+                "silverstripe",
+                "sortable"
+            ],
+            "time": "2016-02-03 13:42:16"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.23",
@@ -304,9 +344,291 @@
                 "siteconfig"
             ],
             "time": "2016-02-24 03:06:04"
+        },
+        {
+            "name": "titledk/silverstripe-gallery",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/titledk/silverstripe-gallery.git",
+                "reference": "7af1b7128872fc3fd8f0b9884f7686fd90fb1fff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/titledk/silverstripe-gallery/zipball/7af1b7128872fc3fd8f0b9884f7686fd90fb1fff",
+                "reference": "7af1b7128872fc3fd8f0b9884f7686fd90fb1fff",
+                "shasum": ""
+            },
+            "require": {
+                "bummzack/sortablefile": "*",
+                "php": ">=5.4",
+                "titledk/silverstripe-uploaddirrules": "dev-master"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "gallery"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anselm Christophersen",
+                    "email": "ac@anselm.dk"
+                }
+            ],
+            "description": "A simple gallery backend for SilverStripe 3 with advanced directory saving rules",
+            "homepage": "https://github.com/titledk/silverstripe-gallery",
+            "keywords": [
+                "gallery",
+                "silverstripe"
+            ],
+            "time": "2016-03-24 22:37:29"
+        },
+        {
+            "name": "titledk/silverstripe-gallery-pagetypes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/titledk/silverstripe-gallery-pagetypes.git",
+                "reference": "693c6ddb0dfb633d5e42162d3a06ef36182bc3db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/titledk/silverstripe-gallery-pagetypes/zipball/693c6ddb0dfb633d5e42162d3a06ef36182bc3db",
+                "reference": "693c6ddb0dfb633d5e42162d3a06ef36182bc3db",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "titledk/silverstripe-gallery": "dev-master"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "gallery-pagetypes"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anselm Christophersen",
+                    "email": "ac@anselm.dk"
+                }
+            ],
+            "description": "Page types for our gallery module",
+            "homepage": "https://github.com/titledk/silverstripe-gallery-pagetypes",
+            "keywords": [
+                "gallery",
+                "silverstripe"
+            ],
+            "support": {
+                "source": "https://github.com/titledk/silverstripe-gallery-pagetypes/tree/master",
+                "issues": "https://github.com/titledk/silverstripe-gallery-pagetypes/issues"
+            },
+            "time": "2016-03-24 22:38:19"
+        },
+        {
+            "name": "titledk/silverstripe-uploaddirrules",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/titledk/silverstripe-uploaddirrules.git",
+                "reference": "77b3489e3fcfc32f484787f16c0ce40682c46bff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/titledk/silverstripe-uploaddirrules/zipball/77b3489e3fcfc32f484787f16c0ce40682c46bff",
+                "reference": "77b3489e3fcfc32f484787f16c0ce40682c46bff",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "^3.1"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "uploaddirrules",
+                "screenshots": [
+                    "docs/img/admin.png"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Anselm Christophersen",
+                    "email": "ac@anselm.dk"
+                }
+            ],
+            "description": "Rules and utilities to keep the SilverStripe assets directory tidy",
+            "homepage": "https://github.com/titledk/silverstripe-uploaddirrules",
+            "keywords": [
+                "assets",
+                "silverstripe",
+                "subsites"
+            ],
+            "time": "2016-03-24 22:28:23"
         }
     ],
     "packages-dev": [
+        {
+            "name": "axyr/silverstripe-ideannotator",
+            "version": "dev-master",
+            "target-dir": "ideannotator",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/axyr/silverstripe-ideannotator.git",
+                "reference": "4d3ab2bbebb2e6d25c7e9775d25b1658cad99ee0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/axyr/silverstripe-ideannotator/zipball/4d3ab2bbebb2e6d25c7e9775d25b1658cad99ee0",
+                "reference": "4d3ab2bbebb2e6d25c7e9775d25b1658cad99ee0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": ">=3.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "ideannotator"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Martijn van Nieuwenhoven",
+                    "email": "info@axyrmedia.nl"
+                }
+            ],
+            "description": "Generate PHP DocBlock annotations for DataObject and DataExtension databasefields and relation methods",
+            "keywords": [
+                "annotations",
+                "database",
+                "docblock",
+                "ide",
+                "orm",
+                "silverstripe"
+            ],
+            "time": "2016-02-25 20:55:28"
+        },
+        {
+            "name": "froog/silvergraph",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/froog/SilverGraph.git",
+                "reference": "1e89431c18b7efc24191cc25a7cea30af592a0f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/froog/SilverGraph/zipball/1e89431c18b7efc24191cc25a7cea30af592a0f0",
+                "reference": "1e89431c18b7efc24191cc25a7cea30af592a0f0",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.0",
+                "silverstripe/framework": "~3.0"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Pickering",
+                    "email": "froogalicious@gmail.com"
+                }
+            ],
+            "description": "Generates data model visualisations from SilverSripe DataObjects, displaying database fields, relations and ancestry",
+            "keywords": [
+                "cms",
+                "member",
+                "permissions",
+                "silverstripe"
+            ],
+            "time": "2015-11-11 01:43:51"
+        },
+        {
+            "name": "gdmedia/ss-auto-git-ignore",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guru-digital/SSAutoGitIgnore.git",
+                "reference": "4e71f8ecf506fa7e82d3218b7c5d593b021d4e7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guru-digital/SSAutoGitIgnore/zipball/4e71f8ecf506fa7e82d3218b7c5d593b021d4e7f",
+                "reference": "4e71f8ecf506fa7e82d3218b7c5d593b021d4e7f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "GDM\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Corey Sewell",
+                    "email": "corey@gurudigal.nz"
+                }
+            ],
+            "description": "A Composer post-update-cmd script to automatically add Composer managed SilverStripe modules and themes to .gitignore",
+            "time": "2015-03-05 23:18:02"
+        },
+        {
+            "name": "oddnoc/silverstripe-artefactcleaner",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oddnoc/silverstripe-artefactcleaner.git",
+                "reference": "7ce3b67ecde7987f5776404b31ef6c1f756218ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oddnoc/silverstripe-artefactcleaner/zipball/7ce3b67ecde7987f5776404b31ef6c1f756218ea",
+                "reference": "7ce3b67ecde7987f5776404b31ef6c1f756218ea",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "~3.7",
+                "silverstripe/framework": "~3.0"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "artefactcleaner"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fred Condo",
+                    "email": "fred@fredcondo.net",
+                    "homepage": "http://oddnoc.github.io",
+                    "role": "developer"
+                }
+            ],
+            "description": "Find and optionally delete disused tables and fields in a SilverStripe database",
+            "homepage": "https://github.com/oddnoc/silverstripe-artefactcleaner",
+            "keywords": [
+                "database",
+                "framework",
+                "silverstripe",
+                "utility"
+            ],
+            "time": "2016-03-23 16:41:52"
+        },
         {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.18",
@@ -721,7 +1043,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "titledk/silverstripe-gallery-pagetypes": 20,
+        "froog/silvergraph": 20,
+        "axyr/silverstripe-ideannotator": 20,
+        "oddnoc/silverstripe-artefactcleaner": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -9,3 +9,13 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'simple'
+---
+Only:
+  environment: 'dev'
+---
+DataObjectAnnotator:
+  enabled: true
+  enabled_modules:
+    - mysite
+    - gallery
+    - gallery-pagetypes
